@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhando com ibagens</title>
+  </head>
+
+  <body>
+    <h1>Conhecendo o elemento de imagem</h1>
+    <hr />
+
+    <img
+      src="assets/img/7e1e15321131846b5e15ba32bf90f156acdd7200_full.jpg"
+      alt="Personagem Gandalf utilizando óculos preto!"
+    />
+
+    <img
+      src="img/al-mosso-liberado-v0-k7ap8cxj0cmc1.webp"
+      alt="Meme do J'ahpodi Al-mossar"
+    />
+
+    <img
+      src="img/sipho-ngondo-Sc9W9j2OPd4-unsplash.jpg"
+      alt="Pessoa com lenço azul no pescoço e um casaco social posando para a foto!"
+      height="500"
+      width="500"
+    />
+
+    <hr />
+
+    <h2>Outras abordagens com imagens</h2>
+    <h3>figure</h3>
+    <p>Serve para agrupar uma imagem e a sua legenda</p>
+
+    <figure>
+      <img
+        src="https://plus.unsplash.com/premium_photo-1761262862858-a1c8f3077452?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=686"
+        alt="Várias máquinas de lavar e secar roupas com um carrinho na frente"
+        height="500"
+      />
+
+      <figcaption>
+        Várias máquinas de lavar e secar roupas com um carrinho na frente
+      </figcaption>
+    </figure>
+
+    <h3>picture</h3>
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="img/7e1e15321131846b5e15ba32bf90f156acdd7200_full.jpg"
+      />
+
+      <source
+        media="(min-width: 800px)"
+        srcset="img/7e1e15321131846b5e15ba32bf90f156acdd7200_full.jpg"
+        type="image/png"
+      />
+
+      <source
+        media="(min-width: 400px)"
+        srcset="img/7e1e15321131846b5e15ba32bf90f156acdd7200_full.jpg"
+        type="image/jpg"
+      />
+
+      <img src="img/7e1e15321131846b5e15ba32bf90f156acdd7200_full.jpg" alt="" />
+    </picture>
+  </body>
+</html>
